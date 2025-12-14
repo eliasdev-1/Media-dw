@@ -1,133 +1,82 @@
 # Media-dw
 
-Media-dw is a Python command-line application that allows you to download videos and multimedia content from multiple platforms in an easy, interactive, and organized way.
+Media-dw is a Python command-line application for downloading videos and multimedia content from multiple platforms in an easy, interactive, and organized way.
 
-It supports single or batch downloads, automatic platform detection, quality selection, and a basic download history.
+## Features
+- Download from multiple platforms: YouTube, Instagram, TikTok, X (Twitter), Facebook, Reddit, and Twitch.
+- Automatic platform detection from a URL.
+- Video/audio quality selection.
+- Batch downloads from .txt or .csv files.
+- Download history stored in JSON.
+- Automatic organization by platform folders.
+- Interactive console interface with colored output.
 
+## Requirements
+- Python 3.8+
+- ffmpeg (required by yt-dlp for post-processing; install via your package manager)
+- Python packages:
+  - yt-dlp
+  - instaloader
+  - colorama
 
----
+## Installation (Quick install)
+1. Clone the repository:
+   ```
+   git clone https://github.com/eliasdev-1/Media-dw.git
+   cd Media-dw
+   ```
 
-🚀 Features
+2. Install Python dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+   If you don't have a requirements.txt, install directly:
+   ```
+   pip install yt-dlp instaloader colorama
+   ```
 
-Download from multiple platforms: YouTube, Instagram, TikTok, Twitter/X, Facebook, Reddit, and Twitch.
+3. Run the program:
+   ```
+   python main.py
+   ```
 
-Automatic platform detection from the URL.
+## Usage
+When you start the program, an interactive menu will appear with options to:
+- Download a single video by pasting a URL.
+- Download multiple URLs from a file (.txt or .csv).
+- Select video/audio quality.
+- View download history.
+- Open the downloads folder automatically.
 
-Video quality selection.
+Downloaded files are saved in a `downloads/` folder organized by platform.
 
-Batch downloads from .txt or .csv files.
-
-Download history in JSON format.
-
-Automatic organization by platform folders.
-
-Interactive console interface with colors.
-
-
-
----
-
-🧰 Requirements
-
-Python 3.8 or higher
-
-Python dependencies:
-
-yt-dlp
-
-instaloader
-
-colorama
-
-
-
-Install dependencies with:
-```
-pip install yt-dlp instaloader colorama
-
-```
----
-
-📥 Download and Installation
-
-1. Clone the repository from GitHub:
-
-```
-
-git clone https://github.com/eliasdev-1/Media-dw.git
-```
-2. Enter the project directory:
-
-
-```
-cd Media-dw
-```
-3. Install requeriments
-```
-pip install -r requirements.txt
-```
-4. Run the script:
-```
-python3 main.py
-```
-(Adjust the filename if needed).
-
-
----
-
-🖥️ Usage
-
-When you start the program, an interactive menu will appear allowing you to:
-
-Download a single video by pasting a URL.
-
-Download multiple URLs from a file.
-
-Select video quality.
-
-View download history.
-
-Open the downloads folder automatically.
-
-
-Downloaded files are saved in a downloads/ folder organized by platform.
-
-
----
-
-📂 Batch Downloads
-
-You can create a text file (.txt or .csv) with one URL per line, for example:
+## Batch downloads
+Create a text file with one URL per line:
 ```
 https://www.youtube.com/watch?v=xxxx
 https://www.instagram.com/reel/xxxx
 https://www.tiktok.com/@user/video/xxxx
 ```
-Then select the batch download option in the menu.
+Then select the batch download option from the menu.
 
+## Notes and caveats
+- Some platforms may require authentication to download certain content (private videos, age-restricted, etc.). The tool may require cookies or credentials for those cases.
+- ffmpeg is required for format conversion and some yt-dlp post-processing.
+- Respect each platform's Terms of Service and local laws. Download only content you have the right to access.
 
----
+## Contributing
+Contributions are welcome! Please:
+- Open issues for bugs or feature requests.
+- Fork the repo and create pull requests for fixes/features.
+- Add tests where appropriate and keep changes small and focused.
 
-⚠️ Disclaimer / Legal Notice
+## License
+Add a LICENSE file (e.g., MIT) to make the project's license explicit.
 
-This project is provided for educational and personal use only.
+## Support
+If you find this project useful and want to support development:
+https://ko-fi.com/eliasdev
 
-The author is not responsible for misuse of this tool. Users are responsible for:
-
-Respecting each platform's terms of service.
-
-Complying with local laws.
-
-Downloading only content they have rights or permission to access.
-
-
-Use this tool responsibly and ethically.
-
-
----
-
-❤️ Support
-
-If you find this project useful and want to support its development, you can buy me a coffee ☕:
-
-👉 https://ko-fi.com/eliasdev
+## Contact
+For questions, open an issue or contact the maintainer via the repository.
+```
