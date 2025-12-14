@@ -79,4 +79,3 @@ https://ko-fi.com/eliasdev
 
 ## Contact
 For questions, open an issue or contact the maintainer via the repository.
-```
