@@ -62,7 +62,11 @@ git clone https://github.com/eliasdev-1/Media-dw.git
 ```
 cd Media-dw
 ```
-3. Run the script:
+3. Install requeriments
+```
+pip install -r requirements.txt
+```
+4. Run the script:
 ```
 python3 main.py
 ```
